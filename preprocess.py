@@ -95,5 +95,8 @@ class preprocess:
                 multi_label[i][topic_dict[prd_review_df.iloc[[i]].topic.values[0][j]]] = 1
             multi_label[i][len(topic_dict)] = prd_review_df.iloc[[i]].sentiment.values
             self.target.append(multi_label[i])
+
+        label_df = pd.DataFrame(self.target)
+        prd_review_df = pd.concat(prd_review_df, label_df, axis=1)
         self.prd_review_df = prd_review_df
         return True
