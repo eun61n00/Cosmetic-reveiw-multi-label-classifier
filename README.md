@@ -7,7 +7,7 @@
 <br></br>
 
 ## **데이터 수집**
-`naver_beautywindow_review_scraping.py`
+[naver_beautywindow_review_scraping.py](https://github.com/eun61n00/Cosmetic-reveiw-multi-label-classifier/blob/master/naver_beautywindow_review_scraping.py)
 
 [네이버 쇼핑 뷰티윈도우](https://shopping.naver.com/beauty/home)의 리뷰들을 크롤링하여 모델을 위한 데이터셋으로 사용하였습니다. </br>
 multi label classificaiton 모델을 만들기 위하여 네이버에 이미 분류되어있는 리뷰들을 분류값과 함께 수집하였습니다.
@@ -15,7 +15,7 @@ multi label classificaiton 모델을 만들기 위하여 네이버에 이미 분
 <br></br>
 
 ## **데이터 전처리**
-`preprocess.py`
+[preprocess.py](https://github.com/eun61n00/Cosmetic-reveiw-multi-label-classifier/blob/master/preprocess.py)
 - 수집한 데이터(dictionary)를 dataframe 형태로 변경
 - multi-lable 모델을 위해 해당되는 분류값만 1인 배열로 label 컬럼을 생성
 - 카테고리에 해당되는 리뷰의 개수가 10000개 이하인 카테고리는 삭제
@@ -25,7 +25,7 @@ multi label classificaiton 모델을 만들기 위하여 네이버에 이미 분
 <br></br>
 
 ## **사용 모델 및 Training**
-`cosmetic_review_classifier.py`
+[cosmetic_review_classifier.py](https://github.com/eun61n00/Cosmetic-reveiw-multi-label-classifier/blob/master/cosmetic_review_classifier.py)
 - SKT에서 공개한 한국어 embedding model인 [KoBERT](https://github.com/SKTBrain/KoBERT) 모델을 사용하였습니다.
 - 모델 사용은 https://github.com/myeonghak/kobert-multi-label-VOC-classifier 를 참고하였습니다.
 - optimizer는 `AdamW`을 사용하였습니다. ([참고한 githug repository](https://github.com/myeonghak/kobert-multi-label-VOC-classifier)-myeonghak)
@@ -43,7 +43,6 @@ multi label classificaiton 모델을 만들기 위하여 네이버에 이미 분
 <img src = 'https://user-images.githubusercontent.com/71613548/170851960-6efa61a4-2b85-462c-b99f-7da5458521f7.png' width=300>
 </br>
 
-정확도는 다음과 같습니다.
 모델의 정확도는 다음과 같습니다.
 - Accuracy: 0.7146666666666667
 - Column-wise Accuracy: 0.9597199999999999
