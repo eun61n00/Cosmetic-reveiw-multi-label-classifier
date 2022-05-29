@@ -38,8 +38,8 @@ multi label classificaiton 모델을 만들기 위하여 네이버에 이미 분
 <img width="1329" alt="test2" src="https://user-images.githubusercontent.com/71613548/170852105-892585e8-6717-486b-bbbe-b33066db2739.png">
 
 사용자가 데이터셋에 존재하지않는 리뷰를 직접 모델의 input으로 넣었을 때의 분석 결과는 다음 예시와 같습니다.</br>
-<img src='https://user-images.githubusercontent.com/71613548/170851956-ac03dbf4-0b13-4d08-8070-c53b956f5932.png' width=300>
-<img src = 'https://user-images.githubusercontent.com/71613548/170851958-073d27f8-bc9a-43fb-88bc-d4e2fb5d1a0b.png' width=300>
+<img src='https://user-images.githubusercontent.com/71613548/170851956-ac03dbf4-0b13-4d08-8070-c53b956f5932.png' width=300></br>
+<img src = 'https://user-images.githubusercontent.com/71613548/170851958-073d27f8-bc9a-43fb-88bc-d4e2fb5d1a0b.png' width=300></br>
 <img src = 'https://user-images.githubusercontent.com/71613548/170851960-6efa61a4-2b85-462c-b99f-7da5458521f7.png' width=300>
 </br>
 
