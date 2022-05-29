@@ -100,3 +100,11 @@ class preprocess:
         prd_review_df = pd.concat(prd_review_df, label_df, axis=1)
         self.prd_review_df = prd_review_df
         return True
+
+if __name__ == '__main__':
+    df = preprocess()
+    df.make_dataframe()
+
+    df = df.sample(frac=1).reset_index(drop=True)
+    df.dropna(inplace=True)
+    df.drop(columns=['트러블 개선', '디자인', '거품', '용량', '품질', '향기', '보습력', '클렌징'], inplace=True)
